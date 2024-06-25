@@ -22,12 +22,12 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           RichText(
             textAlign: TextAlign.center,
-            text: TextSpan(
+            text: const TextSpan(
               text: 'Unveiling a World of ',
               style: TextStyle(
                   color: Colors.black,
@@ -48,18 +48,18 @@ class SplashScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10),
+          const Padding(
+            padding: EdgeInsets.all(10),
             child: Text(
               textAlign: TextAlign.center,
               'Lorem ipsum dolor sit amet, consectere adipiscing elit, sed do eiusmod tempor incididunt',
               style: TextStyle(fontSize: 18, color: Colors.grey),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
           InkWell(
@@ -70,11 +70,11 @@ class SplashScreen extends StatelessWidget {
               height: 60,
               width: 400,
               decoration: BoxDecoration(
-                color: Color(0xff445A4B),
+                color: const Color(0xff445A4B),
                 borderRadius: BorderRadius.circular(10),
               ),
               alignment: Alignment.center,
-              child: Text(
+              child: const Text(
                 "Let's Get Started",
                 style: TextStyle(
                     color: Colors.white,
@@ -83,10 +83,10 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(

@@ -40,9 +40,9 @@ class HomeScreen extends StatelessWidget {
                   Container(
                     height: 250,
                     width: double.infinity,
-                    decoration: BoxDecoration(
-                      color: const Color(0xff445A4B),
-                      borderRadius: const BorderRadius.only(
+                    decoration: const BoxDecoration(
+                      color: Color(0xff445A4B),
+                      borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(30),
                         bottomRight: Radius.circular(30),
                       ),
@@ -125,11 +125,11 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     child: Container(
                       height: 200,
                       width: 450,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.cover,
                           image: AssetImage('assets/imgs/main.png'),
@@ -200,7 +200,7 @@ class HomeScreen extends StatelessWidget {
                       : SizedBox(
                     height: 280,
                     child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         childAspectRatio: 1/1,
                       ),
@@ -232,8 +232,8 @@ class HomeScreen extends StatelessWidget {
                                     ),
                                   ),
                                   alignment: Alignment.topRight,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(10),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(10),
                                     child: Icon(Icons.favorite),
                                   ),
                                 ),

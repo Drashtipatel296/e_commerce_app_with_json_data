@@ -35,27 +35,27 @@ class ProductScreen extends StatelessWidget {
                     Container(
                       height: 60,
                       width: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(Icons.favorite_border_outlined),
+                      child: const Icon(Icons.favorite_border_outlined),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 20,
                     ),
                     Container(
                       height: 60,
                       width: 40,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           color: Colors.white, shape: BoxShape.circle),
-                      child: Icon(Icons.share),
+                      child: const Icon(Icons.share),
                     ),
                   ],
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -64,13 +64,13 @@ class ProductScreen extends StatelessWidget {
                 children: [
                   Text(
                     dataModel.products![productIndex].title,
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
-                  Icon(Icons.star,color: Colors.yellow,),
+                  const Spacer(),
+                  const Icon(Icons.star,color: Colors.yellow,),
                   Text(
                     dataModel.products![productIndex].rating.toString(),
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
@@ -79,15 +79,15 @@ class ProductScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
               child: Text(
                 'Price :- \$ ${dataModel.products![productIndex].price}',
-                style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10),
               child: Divider(),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10),
               child: Text(
                 'Description',
                 style: TextStyle(fontSize: 25,color: Colors.black,fontWeight: FontWeight.bold),
@@ -100,12 +100,12 @@ class ProductScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 16,color: Colors.grey.shade600),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10),
               child: Divider(),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 20,right: 20,top: 10),
               child: Text(
                 'Product Details',
                 style: TextStyle(fontSize: 23,color: Colors.black,fontWeight: FontWeight.bold),
@@ -113,8 +113,8 @@ class ProductScreen extends StatelessWidget {
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Category :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -124,15 +124,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].category,
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Discount :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -142,15 +142,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].discountPercentage.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Stock :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -160,15 +160,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].stock.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Brand :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -178,15 +178,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].brand.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Weight :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -196,15 +196,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].weight.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Height :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -214,15 +214,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].dimensions.height.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Width :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -232,15 +232,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].dimensions.width.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Warranty :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -250,15 +250,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].warrantyInformation.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Avaibility Status :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -268,15 +268,15 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].availabilityStatus.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
             ),
             Row(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20,right: 20,top: 10),
+                const Padding(
+                  padding: EdgeInsets.only(left: 20,right: 20,top: 10),
                   child: Text(
                     'Return Policy :-',
                     style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),
@@ -286,7 +286,7 @@ class ProductScreen extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 10),
                   child: Text(
                     dataModel.products![productIndex].returnPolicy.toString(),
-                    style: TextStyle(fontSize: 20,color: Colors.black),
+                    style: const TextStyle(fontSize: 20,color: Colors.black),
                   ),
                 ),
               ],
